@@ -8,6 +8,7 @@ requests = "*"
 pyomo = "==6.6.1"
 pandas = "==1.5.3"
 highspy = "==1.5.3"
+fastapi = {version = "==0.97.0", extras = ["all"]}
 
 [dev-packages]
 pytest = "*"

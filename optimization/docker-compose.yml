@@ -1,0 +1,13 @@
+version: '3.8'
+
+services:
+  run-app:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    command: uvicorn app:app --reload --host 0.0.0.0 --port 8003
+    volumes:
+      - .:/usr/src/app/
+    ports:
+      - 8003:8003
+    
